@@ -1,4 +1,4 @@
-module github.com/mariombn-io/mariombn-io
+module github.com/mariombn-io/go-core-api
 
 go 1.21.6
 

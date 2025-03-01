@@ -6,9 +6,9 @@ import (
 
 	// Importe seus pacotes reais conforme a estrutura do seu go.mod.
 	// Exemplo:
-	"github.com/mariombn-io/mariombn-io/api"
-	"github.com/mariombn-io/mariombn-io/cmd/cli"
-	// "github.com/mariombn-io/mariombn-io/config"
+	"github.com/mariombn-io/go-core-api/api"
+	"github.com/mariombn-io/go-core-api/cmd/cli"
+	// "github.com/mariombn-io/go-core-api/config"
 )
 
 func main() {

@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mariombn-io/mariombn-io/api/handlers"
-	"github.com/mariombn-io/mariombn-io/api/middlewares"
+	"github.com/mariombn-io/go-core-api/api/handlers"
+	"github.com/mariombn-io/go-core-api/api/middlewares"
 )
 
 type Route struct {

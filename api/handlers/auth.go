@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mariombn-io/mariombn-io/api/requests"
+	"github.com/mariombn-io/go-core-api/api/requests"
 )
 
 // Auth trata a rota POST /api/auth
