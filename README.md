@@ -110,6 +110,3 @@ Once everything is completed, we will have release **1.0.0**.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
-
-Este README apresenta a proposta do projeto, instruções para rodar em modo de desenvolvimento e build, além da todo list com os próximos passos. Sinta-se à vontade para ajustar conforme a evolução do projeto.
