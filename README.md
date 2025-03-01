@@ -1,6 +1,11 @@
 # mariombn-io
 
-## Project TODO List
+To run project:
+```bash
+go run main.go --api --host 0.0.0.0 --port 8088
+```
+
+## TODO List
 
 - [x] Basic project structure
 - [x] Configuration of routes, middlewares, handlers, and requests
