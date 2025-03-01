@@ -8,16 +8,10 @@ import (
 
 func StartServer(host, port string) {
 	r := gin.Default()
-
-	// Rota de exemplo
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{"message": "pong"})
-	})
-
+	SetupRoutes(r)
 	address := fmt.Sprintf("%s:%s", host, port)
-	fmt.Printf("Iniciando servidor em %s\n", address)
-	err := r.Run(address)
-	if err != nil {
+	fmt.Printf("Starting server at %s\n", address)
+	if err := r.Run(address); err != nil {
 		panic(err)
 	}
 }
