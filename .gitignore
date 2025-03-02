@@ -1,35 +1,28 @@
-# Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
 
-# Test binaries, gerados com `go test -c`
 *.test
 
-# Output da ferramenta de cobertura de testes
 *.out
 
-# Diretório de dependências (caso use vendoring)
 vendor/
 
-# Arquivos de workspace do Go (caso use go.work)
 go.work
 go.work.sum
 
-# Pastas e arquivos de IDEs/Editors
 .idea/
 .vscode/
 *.sublime-workspace
 *.sublime-project
 
-# Arquivos e diretórios gerados pelo sistema operacional
 .DS_Store
 Thumbs.db
 
-# Logs
 *.log
 
-# Arquivos temporários
 tmp/
+
+.envß
