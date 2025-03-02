@@ -6,10 +6,11 @@ import (
 
 	"github.com/mariombn-io/go-core-api/api"
 	"github.com/mariombn-io/go-core-api/cmd/cli"
+	"github.com/mariombn-io/go-core-api/config"
 )
 
 func main() {
-	// config.Init()
+	config.Init()
 
 	// Valores padrão
 	host := "0.0.0.0"

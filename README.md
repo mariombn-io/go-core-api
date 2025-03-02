@@ -89,9 +89,50 @@ Then you can run the binary:
 ./go-core-api --api --host 0.0.0.0 --port 8088
 ```
 
+## Docker Setup
+
+This project includes a `docker-compose.yml` file that sets up three services: the API application, a PostgreSQL database, and a Redis instance. The containers use the same environment variables defined in the `.env` file.
+
+### Running the Containers
+
+From the root of the project, run:
+
+```bash
+docker-compose up --build
+```
+
+This command will build the application image and start the following containers:
+- **app**: Your Go application (exposed on port 8088 by default).
+- **postgres**: PostgreSQL database.
+- **redis**: Redis instance.
+
+### Running CLI Commands via Docker Exec
+
+Since the CLI is part of the application, you can run CLI commands within the running container. Follow these steps:
+
+1. **List Running Containers**
+
+   To see the container names, use:
+
+   ```bash
+   docker ps
+   ```
+
+   Look for the container running your application (e.g., it might be named `go-core-api_app_1`).
+
+2. **Execute CLI Command**
+
+   To run a CLI command inside the container, use `docker exec`. For example, to run the CLI tool:
+
+   ```bash
+   docker exec -it go-core-api_app_1 go run main.go --cli
+   ```
+
+   Replace `go-core-api_app_1` with the actual container name if different.
+
 ## TODO
 
-- [X] Basic project structure
+- [x] Basic project structure
 - [x] Configuration of routes, middlewares, handlers, and requests
 - [ ] Setup of development environment, Docker, and Docker Compose
 - [ ] Utils for handlers with functions for standardizing success and error responses
